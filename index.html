@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>WEEK THREE TASK</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#edeaf9ff;
+            padding-bottom: 100px;
+        }
+        .img-container-grad{
+            width: 100%;
+        }
+        .img-container-grad img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+
+    </style>
+    <script>
+        function handleSubmit(){
+            const opt=confirm('Are you sure you want to continue with this action')
+            opt && alert('Thanks for your interest in our programme, You will be contacted shortly')
+        }
+    </script>
+</head>
+<body>
+    <div class="container pt-3">
+        <div class="row p-2 mb-5">
+            <div class="col-sm-6" >
+                <h4>Tomorrow <br>University</h4>
+                <span>of applied science.</span> 
+                <img src="tomorrow_uni.png" style="width: 40px; height: auto; border-radius: 5px;"/> 
+            </div>
+            <div class="col-sm-6" style="text-align: right ;">
+                <a   href="#app-form" class="btn btn-success" style="border-radius: 20px; padding: 10px 25px; font-weight: bold;">Apply Now</a>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>
+                    Online Master’s Degree in sustainability
+                </h4>
+                <p>Our professional Master Degree in Sustainability Entrepreneurship and Technology will prepare you to Solve our Society’s grandest challenges. You’ll gain the most in demand skills in the 21st Century to develop the sustainable ideas and technology for better tomorrow. </p>
+                <a   href="#app-form" class="btn btn-success" style="border-radius: 20px; padding: 10px 25px; font-weight: bold;">Apply Now</a>
+     
+            </div>
+            <div class="col-sm-6">
+                <div class="img-container-grad">
+                    <img src="student.png" alt="Student Image">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-6 ">
+                <div class="my-form card shadow-sm my-form p-5">
+                    <div style="text-align: center;"><img src="tomorrow_uni.png" style="width: 120px; height: auto; border-radius: 5px;"/> </div>
+                   <hr>
+                    <h5 id="app-form">PLEASE FILL THE FORM PROVIDED</h5>
+                    <form action="" onsubmit="event.preventDefault(),handleSubmit()" >
+                        <div class="input-group" style="margin-bottom: 10px;">
+                            <input class="form-control"  type="text" placeholder="FULL NAME" id="fullname" required>
+                        </div>
+    
+                        <div class="input-group" style="margin-bottom: 10px;">
+                            <input type="email"  class="form-control" placeholder="EMAIL" id="email" required> 
+                        </div>
+                        <div class="input-group" style="margin-bottom: 10px;">
+                            <input type="number" class="form-control" placeholder="PHONE NUMBER" id="number" required>
+                        </div>
+                        <div class="input-group2" style="margin-bottom: 10px;">
+                            <span class="group-label">SELECT GENDER</span><br>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gender" value="Male" id="male"><label for="male"  class="form-check-label" required> MALE</label> 
+                            </div>
+                            <div class="form-check">
+                                <input type="radio"  class="form-check-input" name="gender" value="Female" id="female"> <label for="female"  class="form-check-label"  required> FEMALE</label> 
+                            </div>
+                        </div>
+    
+                        <div class="input-group2" style="margin-bottom: 10px;">
+                            <span class="group-label">SELECT PROGRAM</span>
+                            <select class="form-control" required>
+                                <option value="TYPE 1">FULL TIME (on-site)</option>
+                                <option value="TYPE 2">PART TIME (on-site)</option>
+                                <option value="TYPE 3">FULL TIME (distance)</option>
+                                <option value="TYPE 4">PART TIME (distance)</option>
+    
+                            </select>
+                        </div>
+                        <div class="input-group-pw" style="margin-bottom: 10px;">
+                            <input type="password"  class="form-control" placeholder="********"  id="password" required>
+                        </div>
+                        <div class="input-group-btn" style="width: 100%; text-align: center;">
+                            <button class="btn btn-info text-white mt-4" style="width: 150px; ">APPLY<i class='fas fa-paper-plane'></i></button>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            <div class="col-md-6">
+                <div class="img-container-grad p-5">
+                    <img src="library.jpg" alt="Student Image">
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
